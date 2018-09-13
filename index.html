@@ -6,25 +6,39 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/article.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/hivideo.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+
 </head>
 <body>
 	<section id="container">
-	<header id="nav1">
-		<div class="row">
-		<div class="small-12 large-12 columns">
-	<nav>
-    <ul class="no-bullet">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="video.html">VIDEO</a></li>
-    <li><a href="film.html">FILM</a></li>
-    <li><a href="photos.html">PHOTOS</a></li>
-    <li><a href="register.html">REGISTER</a></li>
-    </ul>
-      </nav>
-      </div>
-  </div>
-	</header>
+	<div class="row">
+    <div class="small-12 medium-12 large-12 columns" id="menuContainer">
+
+		<div class="title-bar text-center" data-responsive-toggle="mainMenu" data-hide-for="medium">
+			<button class="menu-icon" type="button" data-toggle="mainMenu"></button>
+			<img src="images/purevolume_logo.svg" class="show-for-small-only" alt="Logo" width="300" heigth="30">
+		</div>
+
+		<div class="top-bar-right" id="mainMenu">
+		    <ul class="menu">
+		    	<li id="mainLogo" class="hide-for-small-only"><img src="images/purevolume_logo.svg" width="300" heigth="100px"></li>
+				<li><a href="#">POP CULTURE</a></li>
+				<li><a href="#">ENTERTAINMENT</a></li>
+				<li><a href="#">MUSIC</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li>
+					<form id="searchBox">
+						<input type="search">
+					</form>
+				</li>
+		    </ul>
+		</div>
+
+	</div>
+</div>
 
 <div class="row">
 	<section id="banner">
@@ -38,25 +52,63 @@
 		</div>
 	</section>
 </div>
+<section id="videoplay1">
+<div class="row">
+   <div class="small-12 large-8 columns main-wrap"> 
+<video ishivideo="true" autoplay="true" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
+    <source src="video/Main.mp4" type="video/mp4" class="pPause">
+    <!-- ogg theora -->
+</video>
+</div>
+</div>
+</section>
+
 
 <div class="row">
 <section id="date">
-	<div class="large-8 columns date1">
+	<div class="large-7 columns date1">
 	
 	</div>
-	<div class="small-12 columns large-4">
+	<div class="small-12 columns large-5 tables">
+		<div class="tables5">
 		<table>
-		<ul class="date3">
-			<li class="date4">NAME       DATE     LOCATION</li>
-			<li class="date5">ELTON JOHN          Sep 25-26     AirCanada Centre</li>
-			<li>FRANK TURNER        Sep 19-21     PhoenixConert Theatre</li>
-			<li>STING WITH SHAGGY   Sep 28        PhoenixConert Theatre</li>
-			<li>HOZIER              Sep 19        Sound Academy</li>
-			<li>JASON ALDEAN        Sep 25        Budweiser Stage</li>
-			<li>JOAN BAEZ           Sep 18        Roy Thomson Hall</li>
-			<li>LEON BRIDGES        Sep 27        TD Echo Beach</li>
-		</ul>
+		<thead>
+			<th>NAME</th>
+			<th width="100">DATE</th>
+			<th>LOCATION</th>
+		</thead>
+		<tbody>
+			<td>ELTON JOHN</td>
+			<td>Sep 25-26</td>
+			<td>AirCanada Centre</td>
+		</tbody>
+		<tbody>
+			<td>FRANK TURNER</td>
+			<td>Sep 19-21</td>
+			<td>PhoenixConert Theatre</td>
+		</tbody>
+		<tbody>
+			<td>STING WITH SHAGGY</td>
+			<td>Sep 28</td>
+			<td>PhoenixConert Theatre</td>
+		</tbody>
+		<tbody>
+			<td>HOZIER</td>
+			<td>Sep 19</td>
+			<td>Sound Academy</td>
+		</tbody>
+		<tbody>
+			<td>JOAN BAEZ</td>
+			<td>Sep 18</td>
+			<td>Roy Thomson Hall</td>
+		</tbody>
+		<tbody>
+			<td>LEON BRIDGES</td>
+			<td>Sep 27</td>
+			<td>TD Echo Beach</td>
+		</tbody>
 		</table>
+	</div>
 	</div>
 </section>
 </div>
@@ -131,22 +183,25 @@ The Tough Times And Successes Of Aubrey Graham</p>
 	</section>
 </div>
 
-<footer>
-	<nav id="footerNav">
-        <ul>
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="video.html">VIDEO</a></li>
-    <li><a href="film.html">FILM</a></li>
-    <li><a href="photos.html">PHOTOS</a></li>
-    <li><a href="register.html">REGISTER</a></li>
-    	</ul>
-    </nav>
-</footer>
+<div class="row" id="footer">
+	<div class="small-12 medium-12 large-12 columns text-center">
+		<img src="images/purevolume_logo.svg" width="300" heigth="30" id="footerLogo" alt="Logo">
+		<ul class="menu">
+			<li><a href="#">POP CULTURE</a></li>
+			<li><a href="#">ENTERTAINMENT</a></li>
+			<li><a href="#">MUSIC</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+	</div>
+</div>
 </section>
 	<script src="js/scripts.js"></script>
 	<script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>	
+    <script src="js/app.js"></script>
+    <script src="js/video.js"></script>
+    <script type="text/javascript" src="js/hivideo.js"></script>		
 </body>
 </html>

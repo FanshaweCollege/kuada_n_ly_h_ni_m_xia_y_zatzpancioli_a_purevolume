@@ -3292,7 +3292,10 @@ table {
   margin-bottom: 1rem;
   border-radius: 3px; }
   table thead,
-  table tbody,
+  table tbody {
+    background-color: #4a4a4a;
+    color:white;
+  }
   table tfoot {
     border: 1px solid #f1f1f1;
     background-color: #fefefe; }
@@ -3300,7 +3303,7 @@ table {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold; }
   table thead {
-    background: #f8f8f8;
+    background: #4a4a4a;
     color: #0a0a0a; }
   table tfoot {
     background: #f1f1f1;
